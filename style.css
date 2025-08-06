@@ -2,3 +2,68 @@
   padding: 0px;
   margin: 0px;
 }
+
+html {
+  max-height: 100vh;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+body section {
+  display: flex;
+  height: 100%;
+}
+
+aside {
+  width: 25%;
+}
+
+.search {
+  background-color: coral;
+  height: 15%;
+  width: 100%;
+}
+
+.contact-list {
+  height: 85%;
+  width: 100%;
+  background-color: deepskyblue;
+}
+
+.contact {
+  display: flex
+}
+
+.contact img {
+  width: 60px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.chat-header {
+  background-color: chartreuse;
+  height: 10%;
+}
+
+.chat-messages {
+  height: 80%;
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-footer {
+  height: 10%;
+  background-color: hotpink;
+}
+
+.chat-active img {
+  width: 60px;
+}
