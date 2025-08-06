@@ -25,6 +25,15 @@ aside {
   background-color: coral;
   height: 10%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  height: 55%;
+  width: 90%;
+  border-radius: 10px;
 }
 
 .contact-list {
