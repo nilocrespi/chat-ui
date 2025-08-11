@@ -66,8 +66,24 @@ main {
 }
 
 .chat-header {
-  background-color: chartreuse;
   height: 12%;
+  display: flex;
+  width: 100%;
+}
+
+.chat-active {
+  display:flex;
+  background-color: rgb(100, 88, 179);
+  width: 85%;
+}
+
+.chat-active img {
+  width: 4em;
+}
+
+.chat-actions {
+  width: 15%;
+  background-color: rgb(81, 156, 58);
 }
 
 .chat-messages {
@@ -80,8 +96,4 @@ main {
 .chat-footer {
   height: 10%;
   background-color: hotpink;
-}
-
-.chat-active img {
-  width: 60px;
 }
