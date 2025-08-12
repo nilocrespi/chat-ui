@@ -72,7 +72,7 @@ main {
 }
 
 .chat-active {
-  display:flex;
+  display: flex;
   background-color: rgb(100, 88, 179);
   width: 85%;
   align-items: center;
@@ -80,18 +80,25 @@ main {
 
 .chat-active img {
   width: 50px;
+  margin-inline: 1em;
+}
+
+.chat-active h3 {
+  margin-right: 0.5em;
 }
 
 .chat-actions {
   width: 15%;
   background-color: rgb(81, 156, 58);
+  align-items: center;
   display: flex;
-  align-content: center;
   justify-content: space-evenly;
 }
 
-.chat-actions button{
-  
+.chat-actions button {
+  height: fit-content;
+  font-size: 1.5em;
+  width: 2em;
 }
 
 .chat-messages {
