@@ -69,6 +69,7 @@ main {
   height: 12%;
   display: flex;
   width: 100%;
+  margin-bottom: 0.7em;
 }
 
 .chat-active {
@@ -108,7 +109,35 @@ main {
   flex-direction: column;
 }
 
+.message {
+  border: solid 1px black;
+  width: fit-content;
+  padding: 0.5em;
+  margin-inline: 1em;
+  margin-block: 0.3em;
+  border-radius: 0.5em;
+}
+
+.sent {
+  align-self: flex-end;
+}
+
 .chat-footer {
   height: 10%;
+  width: 100%;
   background-color: hotpink;
+  display: flex;
+  align-items: center;
+}
+
+.chat-footer input {
+  background-color: blue;
+  width: 95%;
+  height: 55%;
+  margin: 1em;
+  border-radius: 10px;
+}
+
+.chat-footer button {
+  width: 5%;
 }
