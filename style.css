@@ -22,7 +22,7 @@ body section {
 }
 
 .search-container {
-  background-color: coral;
+  background-color: rgb(254, 254, 254);
   height: 12%;
   width: 100%;
   display: flex;
@@ -39,7 +39,7 @@ body section {
 .contact-list {
   height: 88%;
   width: 100%;
-  background-color: deepskyblue;
+  background-color: rgb(254, 254, 254);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,16 +65,19 @@ main {
   width: 80%;
 }
 
+.chat {
+  border-inline: solid 1px rgb(219, 219, 219);
+}
+
 .chat-header {
   height: 12%;
   display: flex;
   width: 100%;
-  margin-bottom: 0.7em;
+  border-bottom: solid 1px rgb(219, 219, 219);
 }
 
 .chat-active {
   display: flex;
-  background-color: rgb(100, 88, 179);
   width: 85%;
   align-items: center;
 }
@@ -90,7 +93,6 @@ main {
 
 .chat-actions {
   width: 15%;
-  background-color: rgb(81, 156, 58);
   align-items: center;
   display: flex;
   justify-content: space-evenly;
@@ -104,9 +106,10 @@ main {
 
 .chat-messages {
   height: 78%;
-  background-color: goldenrod;
+  background-color: rgb(246, 248, 249);
   display: flex;
   flex-direction: column;
+  padding-block: 1em;
 }
 
 .message {
@@ -125,13 +128,13 @@ main {
 .chat-footer {
   height: 10%;
   width: 100%;
-  background-color: hotpink;
+  background-color: rgb(254, 254, 254);
   display: flex;
   align-items: center;
 }
 
 .chat-footer input {
-  background-color: blue;
+  background-color: rgb(254, 254, 254);
   width: 95%;
   height: 55%;
   margin: 1em;
