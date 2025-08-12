@@ -51,6 +51,8 @@ body section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .contact {
@@ -59,6 +61,7 @@ body section {
   border-radius: 5px;
   margin-block: 0.2em;
   padding-block: 0.2em;
+
 }
 
 .contact:hover {
@@ -124,11 +127,14 @@ main {
 }
 
 .chat-messages {
-  height: 78%;
+  height: fit-content;
+  max-height: 78%;
   background-color: rgb(246, 248, 249);
   display: flex;
   flex-direction: column;
   padding-block: 1em;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .message {
