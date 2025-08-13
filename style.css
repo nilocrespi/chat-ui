@@ -4,12 +4,13 @@
 }
 
 html {
-  max-height: 100vh;
+  max-height: 100dvh;
   height: 100%;
 }
 
 body {
   height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 body section {
@@ -60,7 +61,7 @@ body section {
   display: flex;
   border-radius: 5px;
   margin-block: 0.2em;
-  padding-block: 0.2em;
+  padding-block: 0.4em;
 }
 
 .contact:hover {
@@ -73,16 +74,20 @@ body section {
   flex-direction: column;
 }
 
+.contact p {
+  font-size: small;
+  padding-block: 0.2em;
+  color: rgb(127, 127, 127);
+}
+
 .contact .online::before {
   content: "• ";
   color: green;
-  padding-block: 0.7em;
 }
 
 .contact .offline::before {
   content: "• ";
   color: red;
-  padding-block: 0.7em;
 }
 
 .active {
@@ -161,10 +166,16 @@ main {
 
 .message {
   width: fit-content;
-  padding: 0.5em;
+  padding: 0.6em;
   margin-inline: 1em;
   margin-block: 0.3em;
   border-radius: 0.5em;
+}
+
+.timestamp {
+  color: rgb(127, 127, 127);
+  font-size: small;
+  padding-top: 0.2em;
 }
 
 .sent {
@@ -194,6 +205,8 @@ main {
   border-radius: 10px;
   margin-block: 1em;
   margin-left: 1em;
+  color: rgb(117, 117, 117);
+  padding-left: 1em;
 }
 
 .chat-footer input:focus {
@@ -213,4 +226,69 @@ main {
 
 .chat-footer button:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    justify-content: center;
+  }
+
+  .contact div {
+    display: none;
+  }
+}
+
+.chat-actions {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap
+}
+
+@media (max-width: 660px) {
+  .chat-actions {
+    font-size: 0.6em;
+    display: flex;
+    flex-wrap: wrap
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+
+  body,
+  html {
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+  }
+
+  .chat {
+    width: 100%;
+  }
+
+  .chat-active {
+    font-size: 1em;
+    width: 80%;
+  }
+
+  .chat-active p {
+    font-size: small;
+  }
+
+  .chat-actions {
+    font-size: 0.6em;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  .message {
+    font-size: small;
+  }
+
+  .chat-footer button {
+    font-size: medium;
+  }
 }
