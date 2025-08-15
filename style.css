@@ -217,15 +217,16 @@ main {
 .chat-footer button {
   width: 5%;
   height: fit-content;
-  font-size: 2em;
+  font-size: 2.5em;
   background-color: rgb(254, 254, 254);
   border: none;
   transition: transform 0.1s;
   margin: 0.5em;
+  color: rgb(127, 127, 127);
 }
 
 .chat-footer button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @media (max-width: 1000px) {
@@ -290,5 +291,6 @@ main {
 
   .chat-footer button {
     font-size: medium;
+    color: rgb(127, 127, 127);
   }
 }
