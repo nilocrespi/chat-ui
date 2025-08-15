@@ -21,48 +21,7 @@
         <input type="search" placeholder="Search..." class="search">
       </div>
       <ul class="contact-list">
-        <li class="contact">
-          <img src="./assets/avatar.jpeg" alt="imagen de perfil">
-          <div>
-            <h4>Vincent Porter</h4>
-            <p class="status offline">left 7 mins ago</p>
-          </div>
-        </li>
-        <li class="contact active">
-          <img src="./assets/avatar.jpeg" alt="imagen de perfil">
-          <div>
-            <h4>Aiden Chavez</h4>
-            <p class="status online">online</p>
-          </div>
-        </li>
-        <li class="contact">
-          <img src="./assets/avatar.jpeg" alt="imagen de perfil">
-          <div>
-            <h4>Mike Thomas</h4>
-            <p class="status online">online</p>
-          </div>
-        </li>
-        <li class="contact">
-          <img src="./assets/avatar.jpeg" alt="imagen de perfil">
-          <div>
-            <h4>Christian Kelly</h4>
-            <p class="status offline">left 10 hours ago</p>
-          </div>
-        </li>
-        <li class="contact">
-          <img src="./assets/avatar.jpeg" alt="imagen de perfil">
-          <div>
-            <h4>Monica Ward</h4>
-            <p class="status online">online</p>
-          </div>
-        </li>
-        <li class="contact">
-          <img src="./assets/avatar.jpeg" alt="imagen de perfil">
-          <div>
-            <h4>Dean Henry</h4>
-            <p class="status offline">offline since Oct 28</p>
-          </div>
-        </li>
+        <!-- lista de contactos cargada dinamicamente desde contactList.js -->
       </ul>
     </aside>
     <main class="chat">
@@ -94,11 +53,14 @@
         </div>
       </section>
       <section class="chat-footer">
-        <input type="text" placeholder="Enter text here...">
-        <button>✈️</button>
+        <input class="input-message" type="text" placeholder="Enter text here...">
+        <button class="btn-send">▶</button>
       </section>
     </main>
   </section>
+
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/contactList.js"></script>
 </body>
 
 </html>
